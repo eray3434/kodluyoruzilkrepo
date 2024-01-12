@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        header{
+            background-color: darkgrey;
+        }
+        
+
+       
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+
+
+        }
+        .card{
+            text-align: center;
+            
+            float: left;
+            border-style: solid;
+            background-color: aqua;
+            
+            
+
+        }
+        p{
+            text-align: center;
+            font-size: 50px;
+        }
+        .input{
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+        }
+        header.button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="text"] {
+            height: 20px;
+            width: 300px;
+        }
+        .button-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            font-size: 50px;
+        }
+
+        /* Div'leri yanyana getirmek için */
+.content {
+    display: flex;
+    justify-content: space-around; /* Card'ları yanyana ve aralarında boşluk bırakmak için */
+}
+
+/* Div'lerin boyutlarını ayarlamak için */
+.card {
+    width: 300px;  /* Genişlik */
+    height: 300px;  /* Yükseklik */
+    margin: 5px; 
+    padding: 50px; /* Div'ler arasında boşluk bırakmak için */
+}
+
+/* Input ve buttonların boyutlarını ayarlamak için */
+input[type="text"], button {
+    width: 300px;  /* Genişlik */
+    height: 50px;  /* Yükseklik */
+    margin: 10px;  /* Input ve buttonlar arasında boşluk bırakmak için */
+}
+
+/* Buttonları aynı satırda tutmak için */
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#box{
+    width: 800px;
+    padding-left:100px;
+    height: 500px;
+}
+#box2{
+    width: 600px;
+    padding-left:100px;
+    height: 500px;
+
+}
+#box3{
+    width: 800px;
+    padding-left:100px;
+    height: 500px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="https://www.picng.com/upload/google/png_google_64093.png" alt="Google">
+    </div>
+   
+
+    <header>
+        <p>Search the web using Google!</p>
+        <div class="input"> 
+            <input type="text" style="width: 500px;">
+        </div>
+        <div class="button-container">
+            <button>Google Search</button>
+            <button>I'm feeling lucky</button>
+        </div>
+    </header>
+
+        <div  class="content">
+            <div id="box" class="card">
+                <p>Special Searches</p> <br>
+                <a href="">Stanford Search</a> <br>
+                <a href="">Linux Search</a> 
+
+            </div>
+            <div id="box2" class="card">
+                <a href="">Help!</a> <br>
+                <a href="">About Google!</a> <br>
+                <a href="">Company Info</a> <br>
+                <a href="">Google Login</a>
+            </div>
+            <div id="box3" class="card">
+                <p>Get Google! <br>
+                    updates monthly
+                </p> <br>
+                <input type="text"> <br>
+                <button>Subscribe</button>
+                <a href=""> Archive</a>
+            </div>
+        </div>
+        
+    
+</body>
+</html>
